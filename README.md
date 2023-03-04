@@ -10,7 +10,7 @@ Problems: https://projecteuler.net/
 - Install & start Docker
 - Open the project in VS Code
 - Run the VS Code command "Remote-Containers: Reopen in Container"
-- In the terminal, run `stack HelloWorld.hs`
+- In the VS Code terminal, run `stack HelloWorld.hs`
 
 ## Todo
 
