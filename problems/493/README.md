@@ -1,0 +1,7 @@
+# Under The Rainbow
+
+<p>70 coloured balls are placed in an urn, 10 for each of the seven rainbow colours.</p>
+<p>What is the expected number of distinct colours in 20 randomly picked balls?</p>
+<p>Give your answer with nine digits after the decimal point (a.bcdefghij).</p>
+
+[Link to problem](https://projecteuler.net/problem=493)

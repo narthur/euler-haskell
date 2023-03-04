@@ -1,0 +1,17 @@
+# Minimum area of a convex grid polygon
+
+<p>A <i>symmetrical convex grid polygon</i> is a polygon such that:</p>
+<ul><li>All its vertices have integer coordinates.</li>
+<li>All its internal angles are strictly smaller than $180°$.</li>
+<li>It has both horizontal and vertical symmetry.</li>
+</ul><p>For example, the left polygon is a convex grid polygon which has neither horizontal nor vertical symmetry, while the right one is a valid symmetrical convex grid polygon with six vertices:</p>
+<div style="text-align:center;">
+<img src="project/images/p742_hexagons.jpg" class="dark_img" alt="" /></div>
+
+<p>Define $A(N)$, the minimum area of a symmetrical convex grid polygon with $N$ vertices.</p>
+
+<p>You are given $A(4) = 1$, $A(8) = 7$, $A(40) = 1039$ and $A(100) = 17473$.</p>
+
+<p>Find $A(1000)$.</p>
+
+[Link to problem](https://projecteuler.net/problem=742)
