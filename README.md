@@ -14,5 +14,4 @@ Problems: https://projecteuler.net/
 
 ## Todo
 
-- [ ] Install Haskell using https://www.haskell.org/ghcup/
 - [ ] Read https://learnyouahaskell.github.io/chapters.html
