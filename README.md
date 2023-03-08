@@ -7,7 +7,10 @@ Problems: https://projecteuler.net/
 ## Dev
 
 - Install Haskell using [GHCup](https://www.haskell.org/ghcup/)
-- Run `stack HelloWorld.hs`
+- `ghci ./problems/1/solve.hs` to open the file
+- `:r` to reload the file
+- `:t` to see the type of anything
+- `:i` to see info about type classes
 
 ## Todo
 
