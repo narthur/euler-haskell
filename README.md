@@ -6,11 +6,8 @@ Problems: https://projecteuler.net/
 
 ## Dev
 
-- Install and enable the Dev Containers VS Code extension
-- Install & start Docker
-- Open the project in VS Code
-- Run the VS Code command "Remote-Containers: Reopen in Container"
-- In the VS Code terminal, run `stack HelloWorld.hs`
+- Install Haskell using [GHCup](https://www.haskell.org/ghcup/)
+- Run `stack HelloWorld.hs`
 
 ## Todo
 
