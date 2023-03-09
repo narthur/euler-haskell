@@ -15,3 +15,4 @@ Problems: https://projecteuler.net/
 ## Todo
 
 - [ ] Read https://learnyouahaskell.github.io/chapters.html
+- [ ] Try https://hspec.github.io/
