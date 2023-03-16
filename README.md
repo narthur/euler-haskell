@@ -1,8 +1,6 @@
 # euler-haskell
 
-Commitment: https://www.beeminder.com/narthur/euler-haskell
-
-Problems: https://projecteuler.net/
+[Beeminder goal][0] | [Problems][1]
 
 ## Dev
 
@@ -16,3 +14,6 @@ Problems: https://projecteuler.net/
 
 - [ ] Read https://learnyouahaskell.github.io/chapters.html
 - [ ] Try https://hspec.github.io/
+
+[0]: https://www.beeminder.com/narthur/euler-haskell
+[1]: https://projecteuler.net/
