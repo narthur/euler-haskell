@@ -7,4 +7,14 @@ Iterate backwards to make sure the first match is the largest
 998 * 998
 998 * 997
 etc
+or something, I'm not sure that sequencing is right
+I guess it should really be:
+999 * 999
+999 * 998
+999 * 997
+...
+999 * 1
+998 * 998
+etc.
+On each "reset," the second number should be the same as the first number.
 -}
