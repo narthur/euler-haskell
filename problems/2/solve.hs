@@ -40,3 +40,19 @@ evens = filter even fibseq
 solve = sum evens
 
 validate = solve == 4613732
+
+-- this one's slow, we think because it's calculating the whole 
+-- sequence on each run of fib:
+
+-- limit = 4000000
+
+-- fib 0 = 1
+-- fib 1 = 1
+-- fib n = fib (n - 1) + fib (n - 2)
+
+-- fibseq = takeWhile (<limit) $ map fib [1..]
+-- evens = filter even fibseq
+
+-- solve = sum evens
+
+-- validate = solve == 4613732
