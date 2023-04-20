@@ -12,6 +12,7 @@
 
 ## Todo
 
+- [ ] Go through course: https://www.cis.upenn.edu/~cis1940/spring13/
 - [ ] Read https://learnyouahaskell.github.io/chapters.html
 - [ ] Try https://hspec.github.io/
 
