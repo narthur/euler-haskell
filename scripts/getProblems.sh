@@ -12,9 +12,11 @@ curl -s $URL > $TMPFILE
 # Get the absolute path of the script directory
 SCRIPTDIR=$(dirname "$(realpath "$0")")
 
+PROBLEMDIR="$SCRIPTDIR/../problems"
+
 # Create a "problems" folder if it doesn't exist in the same parent directory as the script
-if [ ! -d "$SCRIPTDIR/../problems" ]; then
-  mkdir "$SCRIPTDIR/../problems"
+if [ ! -d "$PROBLEMDIR" ]; then
+  mkdir "$PROBLEMDIR"
 fi
 
 # Loop through each line of the file
@@ -28,19 +30,18 @@ while read -r line; do
     continue
   fi
 
-  # Check if a directory with that ID exists inside the "problems" folder, if not create it
-  if [ ! -d "$SCRIPTDIR/../problems/$ID" ]; then
-    mkdir "$SCRIPTDIR/../problems/$ID"
-  fi
+  PROBLEMFILE="$PROBLEMDIR/$ID.hs"
 
   # Check if a file with the name "README.md" exists inside the problem directory, if not create it
-  if [ ! -f "$SCRIPTDIR/../problems/$ID/README.md" ]; then
+  if [ ! -f "$PROBLEMFILE" ]; then
     # Get the HTML description of problem ID from Project Euler website and save it as README.md in the problem directory with description as top-level heading and link to problem at bottom 
-    echo "# $DESCRIPTION" > "$SCRIPTDIR/../problems/$ID/README.md"
-    echo "" >> "$SCRIPTDIR/../problems/$ID/README.md"
-    curl -s "https://projecteuler.net/minimal=$ID" >> "$SCRIPTDIR/../problems/$ID/README.md"
-    echo "" >> "$SCRIPTDIR/../problems/$ID/README.md"
-    echo "[Link to problem](https://projecteuler.net/problem=$ID)" >> "$SCRIPTDIR/../problems/$ID/README.md"
+    echo "{-" >> "$PROBLEMFILE"
+    echo "# $DESCRIPTION" >> "$PROBLEMFILE"
+    echo "" >> "$PROBLEMFILE"
+    curl -s "https://projecteuler.net/minimal=$ID" >> "$PROBLEMFILE"
+    echo "" >> "$PROBLEMFILE"
+    echo "[Link to problem](https://projecteuler.net/problem=$ID)" >> "$PROBLEMFILE"
+    echo "-}" >> "$PROBLEMFILE"
 
     # Add a 1 second delay before proceeding to next line
     sleep 1 
