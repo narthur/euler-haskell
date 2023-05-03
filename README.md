@@ -13,10 +13,12 @@
 ## Todo
 
 - [ ] Go through course: [CIS 194: Introduction to Haskell (Spring 2013)][2]
-- [ ] Read https://learnyouahaskell.github.io/chapters.html
-- [ ] Try https://hspec.github.io/
+- [ ] Read: [Learn You a Haskell for Great Good!][4]
+- [ ] Try [Hspec testing framework][5]
 
 [0]: https://www.beeminder.com/narthur/euler-haskell
 [1]: https://projecteuler.net/
 [2]: https://www.cis.upenn.edu/~cis1940/spring13/
 [3]: https://www.haskell.org/ghcup/
+[4]: https://learnyouahaskell.github.io/chapters.html
+[5]: https://hspec.github.io/
