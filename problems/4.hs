@@ -35,4 +35,30 @@ I guess it should really be:
 etc.
 
 On each "reset," the second number should be the same as the first number.
+
+function isPalindrome(n: number): boolean {
+    const str = n.toString();
+    const reversed = str.split('').reverse().join('');
+    return str === reversed;
+}
+
+function solve(x: number = 999, y: number = 999): number {
+    if (isPalindrome(x * y)) return x * y;
+    if (y === 0) return solve(x - 1, x - 1);
+    return solve(x, y - 1);
+}
+
+solve();
 -}
+
+isPalindrome :: Integer -> Bool
+isPalindrome n = str == reverse str
+    where str = show n
+
+solve :: Integer -> Integer -> Integer
+solve x y
+    | isPalindrome (x * y) = x * y
+    | y == 0 = solve (x - 1) (x - 1)
+    | otherwise = solve x (y - 1)
+
+# I haven't tested this code yet.
