@@ -1,5 +1,7 @@
 # euler-haskell
 
+A repository for learning Haskell by going through the Project Euler problem set.
+
 [Beeminder goal][0] | [Problems][1]
 
 ## Dev
