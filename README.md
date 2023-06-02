@@ -15,7 +15,7 @@ A repository for learning Haskell by going through the Project Euler problem set
 ## Todo
 
 - [ ] Go through course: [CIS 194: Introduction to Haskell (Spring 2013)][2]
-- [ ] Read: [Learn You a Haskell for Great Good!][4]
+- [ ] Read [Learn You a Haskell for Great Good!][4]
 - [ ] Try [Hspec testing framework][5]
 
 [0]: https://www.beeminder.com/narthur/euler-haskell
